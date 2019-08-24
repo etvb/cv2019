@@ -1,18 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
     <div class="min-vh-100 fondo">
+        <!--home--->
+        <div class="overlay position-absolute"></div>
         <header>
-            <nav></nav>
+            <nav class="nav justify-content-center justify-content-lg-end pt-5">
+                <!-- <div class="col-4 contenedor-img">
+                    <img src="" alt="pp">
+                </div> -->
+                <div class="col-lg-6 contenedor-nav">
+                    <ul class="nav justify-content-around list-unstyled h5 flex-column& flex-lg-row">
+                        <li><a class="font-weight-bold text-white" href="#">Home</a></li>
+                        <li><a class="font-weight-bold text-white" href="#sobreMi">Sobre Mí</a></li>
+                        <li><a class="font-weight-bold text-white" href="#conocimientos">Conocimientos</a></li>
+                        <li><a class="font-weight-bold text-white" href="#proyectos">Proyectos</a></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
+
+        <div class="container">
+            <!--fin-intro-->
+            <div class="row justify-content-center justify-content-lg-between align-items-center">
+                <div class="col-4 col-lg-3" data-aos="fade-right">
+                    <a href="" class="">
+                        <img class="img-fluid py-4 rounded-circle" src="/static/img/escudo.jpg" alt="">
+                    </a>
+                    <h1 class="colorText text-center h6">Edgardo Torres Vanden Bouch</h1>
+                </div>
+                <div class="col-lg-6 h2 colorText font-weight-bold textShadow " data-aos="fade-left>
+                    <p class="">Entusiasta de la tecnología, incursionando en el desarrollo web para encontrar nuevas
+                        formas de ayudar a las personas.</p>
+                </div>
+            </div>
+        </div>
+        <!--fin-intro-->
+
     </div>
+    <!--Fin-home--->
+
+    <div class=" container mt-5" id="sobreMi">
+                    <!--sobre mi-->
+                    <div class="row justify-content-center">
+                        <h2 class=" display-2 d-block mb-5 tituloSobre" data-aos="fade-up">Sobre mí</h2>
+                        <p class="fontsize-48 pl-3" data-aos="fade-up">¡¡¡HOLA, HOLA!!! soy <strong>Edgardo Torres
+                                Vanden Bouch</strong>, <em>
+                                Ingeniero en sistemas computacionales</em> con 9 años de experiencia en <em>soporte
+                                técnico</em> en
+                            empresas como <a href="https://www.tresguerras.com.mx/3G/" target="_blanck">
+                                Tresguerras</a>, <a href="https://www.mediaccess.com.mx/"
+                                target="_blanck">Mediaccess</a> y <a
+                                href="https://primeandwine.com.mx/prime-wine-polanco/" target="_blanck"> P&W </a>.</p>
+                        <p class="fontsize-48 pl-3" data-aos="fade-up">Buscando ayudar a las personas y empresas estoy
+                            incursionando en el
+                            desarrollo web, aprendiendo tecnologías del <em>frontend</em> y <em>backend</em> para poder
+                            ser un <em>
+                                desarrollador web full stack</em>.</p>
+                        <p class="fontsize-48 pl-3" data-aos="fade-up">Tengo algunos proyectos con tecnologías <span
+                                class="naranja">HTML</span>, <span class="azul">CSS</span> y <span
+                                class="amarillo font-weight-bold">JS</span>.</p>
+                    </div>
+                </div>
+                <!--fin-sobre mi--->
+                <div class="container-fluid mt-5" id="conocimientos">
+                    <!--conocomientos-->
+                    <div class="row justify-content-center bg-light pb-5">
+                        <!--row-->
+                        <h2 class="col-12 text-center mb-5 pt-5 display-4" data-aos="fade-up">Conocimientos y Cualidades
+                        </h2>
+                        <div class="col-12 col-sm-4" data-aos="fade-up">
+                            <ul class="font-weight-bold h4">
+                                <li>Puntual.</li>
+                                <li>Responsable.</li>
+                                <li>Honesto.</li>
+                                <li>Leal.</li>
+                                <li>Servicial.</li>
+                                <li>Autodidacta.</li>
+                                <li>Tolerante.</li>
+                                <li>Optimista.</li>
+                                <li>Adaptacion.</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-4 text-center " data-aos="fade-up">
+                            <div class="Knowledge-container naranja">
+                                <p class="Knowledge-name m-0">HTML 40%</p>
+                                <progress max="100" value="40" class="Knowledge-percentage fontsize-48"></progress>
+                            </div>
+                            <div class="Knowledge-container">
+                                <p class="Knowledge-name m-0">CSS 30%</p>
+                                <progress max="100" value="30" class="Knowledge-percentage fontsize-48"></progress>
+                            </div>
+                            <div class="Knowledge-container amarillo">
+                                <p class="Knowledge-name m-0 textShadow">Javascript 10%</p>
+                                <progress max="100" value="10" class="Knowledge-percentage fontsize-48"></progress>
+                            </div>
+                            <div class="Knowledge-container">
+                                <p class="Knowledge-name m-0">Git 30%</p>
+                                <progress max="100" value="30" class="Knowledge-percentage fontsize-48"></progress>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin-row-->
+                </div>
+                <!--fin-conocomientos-->
+                <div class="container mt-5 mb-5" id="proyectos">
+                    <!--proyectos-->
+                    <div class="row">
+                        <!--row-->
+                        <div class="col-12 text-center">
+                            <h2 class=" display-2 d-block mb-5 tituloSobre" data-aos="fade-up">Proyectos</h2>
+                        </div>
+                        <div class="card-deck justify-content-center">
+                            <!--Card-deck-->
+
+                            <div class="card h-auto w-75 col-md-4 ml-5 ml-sm-0" data-aos="fade-up">
+                                <img src="/static/img/lo-ammi.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold">Portafolio</h5>
+                                    <p class="card-text">Portafolio para mostrar los trabajos de un diseñador
+                                        grafico.</p>
+
+                                    <a href="#" class="btn btn-primary">ir a la página</a>
+                                </div>
+                            </div>
+
+
+                            <div class="card h-auto w-75 col-md-4 ml-5 ml-sm-0" data-aos="fade-up">
+                                <img src="/static/img/squid3.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold">Squid 3</h5>
+                                    <p class="card-text">Apuntes de como instalar y configurar un servidor proxy
+                                        Squid 3 para bloquear youtube en la red.</p>
+                                    <a href="#" class="btn btn-primary">ir a la página</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!--Card-deck-->
+                    </div>
+                    <!--fin-row-->
+                </div>
+                <!--fin-proyectos-->
+
+
+
+
+
+
+                <!-- scripts -->
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>
+                    AOS.init();
+                </script>
 </body>
+
 </html>
