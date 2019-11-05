@@ -48,5 +48,12 @@ body {
   .tituloSobre {
     font-size: 3rem;
   }
+  .sm-movil {
+    color: red;
+    font-size: 16px;
+  }
+  .sm-conocimientos {
+    font-size: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
