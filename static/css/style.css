@@ -7,7 +7,6 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 .overlay {
@@ -54,6 +53,12 @@ body {
   }
   .sm-conocimientos {
     font-size: 3rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .fondo {
+    height: 100vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
