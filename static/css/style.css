@@ -3,10 +3,222 @@ body {
 }
 
 .fondo {
-  background-image: url("../img/fondo2.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #50a3a2;
+  background: -webkit-gradient(linear, left top, right bottom, from(#50a3a2), to(#53e3a6));
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  position: relative;
+  overflow: hidden;
+  /* z-index: 2; */
+}
+
+.bg-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: 1; */
+  pointer-events: none
+
+}
+
+.bg-bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  opacity: .1;
+  background-color: #50a3a2;
+
+  /* background-color: fade(white, 25%); */
+  /* background-color: -webkit-fade(white, 90%); */
+
+  bottom: -160px;
+  -webkit-animation: square 25s infinite;
+  animation: square 25s infinite;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.bg-bubbles li:nth-child(1) {
+  left: 10%;
+  animation-duration: 17s;
+
+}
+
+.bg-bubbles li:nth-child(2) {
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+}
+
+.bg-bubbles li:nth-child(3){
+  left: 25%;
+  animation-delay: 1s;
+}
+
+.bg-bubbles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 22s;
+  background-color: fade(white, 25%);
+}
+
+.bg-bubbles li:nth-child(5){
+  left: 70%;
+}
+
+.bg-bubbles li:nth-child(6){
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  
+  animation-delay: 1s;
+  background-color: fade(white, 20%);
+}
+
+.bg-bubbles li:nth-child(7){
+  left: 32%;
+  width: 160px;
+  height: 160px;
+  
+  animation-delay: 5ms;
+}
+
+.bg-bubbles li:nth-child(8){
+  left: 55%;
+  width: 20px;
+  height: 20px;
+  
+  animation-delay: 3ms;
+  animation-duration: 40s;
+}
+
+.bg-bubbles li:nth-child(9){
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  
+  animation-delay: 2ms;
+  animation-duration: 40s;
+  background-color: fade(white, 30%);
+}
+
+.bg-bubbles li:nth-child(10){
+  left: 90%;
+  width: 160px;
+  height: 160px;
+  
+  animation-delay: 1ms;
+}
+.bg-bubbles li:nth-child(11) {
+  left: 5%;
+  width: 80px;
+  height: 80px;
+  opacity: .5;
+  animation-delay: 2s;
+  animation-duration: 10s;
+}
+.bg-bubbles li:nth-child(12) {
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  opacity: .2;
+  animation-duration: 17s;
+}
+.bg-bubbles li:nth-child(13) {
+  left: 29%;
+  width: 20px;
+  height: 20px;
+  opacity: .3;
+  animation-delay: 2s;
+  animation-duration: 15s;
+}
+.bg-bubbles li:nth-child(14) {
+  left: 37%;
+  width: 40px;
+  height: 40px;
+  /* opacity: .3; */
+  animation-delay: 3s;
+  animation-duration: 10s;
+}
+.bg-bubbles li:nth-child(15) {
+  left: 45%;
+  width: 80px;
+  height: 80px;
+  /* opacity: .5; */
+  animation-delay: 2s;
+  animation-duration: 10s;
+}
+.bg-bubbles li:nth-child(16) {
+  left: 52%;
+  width: 80px;
+  height: 80px;
+  /* opacity: .5; */
+  animation-delay: 5s;
+  animation-duration: 15s;
+}
+.bg-bubbles li:nth-child(17) {
+  left: 68%;
+  width: 80px;
+  height: 80px;
+  /* opacity: .5; */
+  animation-delay: 4s;
+  animation-duration: 15s;
+}
+.bg-bubbles li:nth-child(18) {
+  left: 75%;
+  width: 80px;
+  height: 80px;
+  /* opacity: .2; */
+  animation-delay: 5ms;
+  animation-duration: 10s;
+}
+.bg-bubbles li:nth-child(19) {
+  left: 84%;
+  width: 80px;
+  height: 80px;
+  /* opacity: .5; */
+  animation-delay: 2s;
+  animation-duration: 10s;
+}
+.bg-bubbles li:nth-child(20) {
+  left: 95%;
+  width: 40px;
+  height: 40px;
+  /* opacity: .5; */
+  animation-delay: 1s;
+  animation-duration: 15s;
+}
+
+
+
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+            transform: translateY(-700px) rotate(600deg);
+  }
+}
+
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+            transform: translateY(-700px) rotate(600deg);
+  }
 }
 
 .overlay {
@@ -14,7 +226,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
 }
 
 .colorText {
