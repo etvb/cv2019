@@ -11,6 +11,13 @@ body {
   /* z-index: 2; */
 }
 
+header{
+  position: fixed;
+  height: 67px;
+  transition: top .5s;
+  z-index: 1;
+}
+
 .bg-bubbles {
   position: absolute;
   top: 0;
@@ -67,7 +74,7 @@ body {
   width: 60px;
   height: 60px;
   animation-duration: 22s;
-  background-color: fade(white, 25%);
+  /* background-color: fade(white, 25%); */
 }
 
 .bg-bubbles li:nth-child(5){
@@ -80,7 +87,7 @@ body {
   height: 120px;
   
   animation-delay: 1s;
-  background-color: fade(white, 20%);
+  /* background-color: fade(white, 20%); */
 }
 
 .bg-bubbles li:nth-child(7){
@@ -107,7 +114,7 @@ body {
   
   animation-delay: 2ms;
   animation-duration: 40s;
-  background-color: fade(white, 30%);
+  /* background-color: fade(white, 30%); */
 }
 
 .bg-bubbles li:nth-child(10){
@@ -221,13 +228,13 @@ body {
   }
 }
 
-.overlay {
+/* .overlay {
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  /* background: rgba(0, 0, 0, 0.5); */
-}
+  background: rgba(0, 0, 0, 0.5);
+} */
 
 .colorText {
   color: white;
@@ -253,18 +260,30 @@ body {
   font-size: 2rem;
 }
 
+.sm-conocimientos {
+  font-size: 3rem;
+}
+
+.tituloSobre {
+  font-size: 1.5rem;
+}
+
+.sangrado{
+  text-indent: 6rem;
+}
+
 @media (max-width: 575px) {
   .fontsize-48 {
     font-size: 1.5rem;
   }
   .tituloSobre {
-    font-size: 3rem;
+    font-size: 1rem;
   }
   .sm-movil {
     font-size: 1.7rem;
   }
   .sm-conocimientos {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 }
 
